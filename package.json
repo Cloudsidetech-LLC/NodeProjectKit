@@ -1,0 +1,30 @@
+{
+  "name": "node_project_kit",
+  "version": "1.0.0",
+  "description": "Starter project core for Node Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cloudsidetech-LLC/NodeProjectKit.git"
+  },
+  "keywords": [
+    "StarterKit",
+    "NodeJs",
+    "FrameworkAgnostic"
+  ],
+  "author": "Khachatur Makaryan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cloudsidetech-LLC/NodeProjectKit/issues"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.0"
+  },
+  "homepage": "https://github.com/Cloudsidetech-LLC/NodeProjectKit#readme"
+}
