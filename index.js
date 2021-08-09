@@ -16,10 +16,21 @@ const logger = Logger('main');
     try {
         await dbConnect();
     } catch (error) {
-        logger.error(error);
+        logger.error('Error on connecting to DB.',error);
         process.exit(1);
     }
 })();
+
+// Server uncaught error handlers
+process.on('uncaughtException', (err) => {
+    console.log('An uncaught exception detected', err);
+    process.exit(-1);
+});
+
+process.on('unhandledRejection', (err) => {
+    console.log('An unhandled rejection detected', err);
+    process.exit(-1);
+});
 
 http(routing, PORT);
 staticHttp(STATIC_PATH, STATIC_SERVER_PORT);
